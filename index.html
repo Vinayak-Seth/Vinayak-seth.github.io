@@ -784,10 +784,10 @@ footer span{color:var(--gold);}
       <div class="proj-icon">📊</div>
       <div class="proj-name">IPL Analytics Dashboard</div>
       <ul class="proj-desc">
-        <li>Cleaned and preprocessed IPL datasets using Pandas to ensure data integrity.</li>
-        <li>Performed in-depth EDA to identify performance trends across seasons, teams, and players.</li>
-        <li>Built dynamic, interactive visualizations with Plotly for rich data storytelling.</li>
-        <li>Deployed a full Streamlit dashboard enabling real-time data exploration by end users.</li>
+        <li>Cleaned and preprocessed multi-season IPL datasets using Pandas, resolving inconsistent team names, missing values, and duplicate records to ensure data integrity.</li>
+        <li>Performed in-depth EDA to uncover batting and bowling performance trends, venue-based win-rate patterns, and player consistency metrics across seasons.</li>
+        <li>Built dynamic, interactive visualisations with Plotly for rich data storytelling across teams, players, and seasons.</li>
+        <li>Deployed a full Streamlit dashboard enabling real-time data exploration with dynamic filtering by team, season, and player.</li>
       </ul>
       <div class="tags">
         <span class="tag">Python</span>
@@ -802,9 +802,10 @@ footer span{color:var(--gold);}
       <div class="proj-icon">🗃️</div>
       <div class="proj-name">Online Retail Management System</div>
       <ul class="proj-desc">
-        <li>Designed a normalised relational database schema for products, customers, and orders.</li>
-        <li>Implemented complex SQL queries to manage inventory tracking and order fulfilment.</li>
-        <li>Generated analytical reports surfacing key business insights for stakeholders.</li>
+        <li>Designed a normalised relational database schema (3NF) covering products, customers, orders, and inventory with foreign key constraints and indexing for query performance.</li>
+        <li>Implemented complex SQL queries using joins, subqueries, and window functions for inventory tracking, order lifecycle management, and low-stock alerting.</li>
+        <li>Generated analytical reports surfacing sales performance, top-selling products, and customer order frequency as key business insights for stakeholders.</li>
+        <li>Modelled end-to-end retail data flow ensuring referential integrity and scalable schema design for real-world retail operations.</li>
       </ul>
       <div class="tags">
         <span class="tag">SQL</span>
@@ -818,21 +819,21 @@ footer span{color:var(--gold);}
       <div class="proj-icon">🤖</div>
       <div class="proj-name">AI-Powered Resume Feedback Assistant</div>
       <ul class="proj-desc">
-        <li>Built an intelligent resume evaluation system that analyses resumes against job descriptions using NLP and semantic similarity techniques.</li>
-        <li>Extracted and processed resume content from PDF files using PyPDF2 with automated text preprocessing pipelines.</li>
-        <li>Implemented resume-job matching using Sentence Transformers to generate similarity scores and identify skill gaps.</li>
-        <li>Integrated Flan-T5 to generate personalised resume improvement suggestions and actionable feedback.</li>
-        <li>Deployed an interactive Streamlit app enabling users to upload resumes and receive real-time ATS-style feedback.</li>
+        <li>Built a resume-to-job-description matching pipeline using Sentence Transformers to compute semantic similarity scores and surface ATS-style keyword gaps with synonym-normalised bigram extraction.</li>
+        <li>Integrated Groq API (Llama 3.1) to generate personalised, context-aware resume improvement suggestions, replacing a local model and reducing inference time by over 80%.</li>
+        <li>Deployed an interactive Streamlit web app with section-wise relevance scoring, matched/missing keyword tagging, and real-time AI feedback for end users.</li>
+        <li>Designed a synonym-aware keyword extraction system handling abbreviation resolution (e.g., ML vs. machine learning) to improve gap detection accuracy.</li>
       </ul>
       <div class="tags">
         <span class="tag">Python</span>
         <span class="tag">NLP</span>
         <span class="tag">Sentence Transformers</span>
-        <span class="tag">Flan-T5</span>
+        <span class="tag">Groq API</span>
+        <span class="tag">Llama 3.1</span>
         <span class="tag">PyPDF2</span>
         <span class="tag">Streamlit</span>
         <span class="tag">Scikit-Learn</span>
-        <span class="tag">Google Colab</span>
+        
       </div>
     </div>
      
@@ -840,9 +841,10 @@ footer span{color:var(--gold);}
       <div class="proj-icon">🤖</div>
       <div class="proj-name">Patient Risk Prediction System</div>
       <ul class="proj-desc">
-        <li>Built a real-time patient vitals monitoring dashboard using Streamlit, with live data refresh and automatic risk classification using a Random Forest model trained on synthetic ICU-style patient data.</li>
-        <li>Implemented ML inference pipeline using scikit-learn to classify patients into Low/Medium/High risk categories with confidence scores, handling end-to-end data flow from feature extraction to prediction display.</li>
-        <li>Developed critical alert system that automatically flags high-risk patients with visual notifications, and a color-coded vitals table for rapid clinical decision support.</li>
+        <li>Built a real-time patient vitals monitoring dashboard using Streamlit with live data refresh and automatic risk classification using a Random Forest model trained on synthetic ICU-style data.</li>
+        <li>Implemented an end-to-end ML inference pipeline using Scikit-Learn to classify patients into Low/Medium/High risk categories with confidence scores, handling full data flow from feature extraction to prediction display.</li>
+        <li>Developed a critical alert system that automatically flags high-risk patients with visual notifications and a colour-coded vitals table for rapid clinical decision support.</li>
+        <li>Evaluated model performance using classification metrics and optimised feature selection to improve prediction reliability across risk categories.</li>
       </ul>
       <div class="tags">
         <span class="tag">Python</span>
